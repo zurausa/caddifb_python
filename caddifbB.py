@@ -1,11 +1,7 @@
-inp=input().split()
-inp=[int(i) for i in inp]
-N=inp[0]
-height=inp[1]
-width=inp[2]
-cnt=0
-for num in range(N):
-    inp=input().split()
-    if int(inp[0]) >= height and int(inp[1]) >= width:
-        cnt+=1
+n, h, w = map(int, input().split())
+cnt = 0
+for _ in range(n):
+    a, b = map(int, input().split())
+    if a >= h and b >= w:
+        cnt += 1
 print(cnt)
